@@ -167,8 +167,8 @@ You can pair with SOL or USDC, but here’s the difference:
 |---|---|---|
 |SOL|Most common ✅|Best visibility, simple setup, higher volume|
 |USDC|Stable reference price	|Slightly more setup, fewer pools|
-💡 For this tutorial, we’ll use SOL — it’s simpler, more liquid, and widely supported.
 
+💡 For this tutorial, we’ll use SOL — it’s simpler, more liquid, and widely supported.
 
 
 
