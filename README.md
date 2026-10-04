@@ -35,8 +35,62 @@ solana config set --keypair ~/.config/solana/mainnet.json
 ```
 Fund it with a small amount of SOL from an exchange.
 
+## 🧱 Mint tokens
+Create your token mint
+```bash
+spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb --enable-metadata --decimals 9
+```
+Create a token account for your wallet
+```bash
+spl-token create-account <MINT_ADDRESS>
+```
+Mint your initial supply
+```bash
+spl-token mint <MINT_ADDRESS> 1000000
+```
+
+## 🔍 4️⃣ Verify Your Token on Explorer
+Before attaching metadata, let’s make sure your token was created successfully and that your wallet holds the minted supply.
+## ✅ Check on Solana Explorer
+Visit:
+```bash
+https://explorer.solana.com/address/<MINT_ADDRESS>?cluster=mainnet
+```
+You should see your Token Mint Account details, including:
+
+Total supply (e.g., 1,000,000)
+
+Mint authority (your wallet address)
+
+Decimals (9)
+Click “Token Accounts” and confirm your wallet address appears there as the owner with your full balance.
+
+## 🧠 Optional CLI Verification
+You can also confirm it via Solana CLI:
+```bash
+spl-token accounts
+```
+This shows all tokens your wallet holds.
+
+Look for your mint address and verify the correct balance.
 
 
+Example output:
+```bash
+Token                                         Balance
+------------------------------------------------------------
+5G2Jf9jP...xyz (MyToken Token)               1000000
+```
+✅ That confirms your token exists and is in your wallet.
+## 💡 Tip
+If you open Phantom and don’t see your token yet:
+
+Click “+” → “Import Token” → paste your mint address.
+
+Or use Solflare, which often displays metadata faster.
+
+## 🧾 5️⃣ Add Metadata (via Storacha)
+You’ll now attach your metadata and image to your token using Storacha for decentralized IPFS hosting.
 
 
 
