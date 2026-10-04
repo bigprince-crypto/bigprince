@@ -126,12 +126,48 @@ Save this as `metadata.json`.
 
 ## ⚙️ Step 3 — Upload the JSON File
 Upload your `metadata.json` file to **Storacha** and copy the resulting URL:
+```bash
+https://storacha.network/ipfs/<NEW_METADATA_CID>
+```
+## ⚙️ Step 4 — Initialize Metadata On-Chain
+Finally, initialize your token’s metadata account on-chain (the first time setup):
+```bash
+spl-token initialize-metadata <MINT_ADDRESS> "MyToken Token" "MTK" "https://storacha.network/ipfs/<NEW_METADATA_CID>"
+```
+This creates the metadata account for your token.
 
+It only needs to be done **once**.
+# 💡 Need to make a change later?
+Use:
+```bash
+spl-token update-metadata <MINT_ADDRESS> "MyToken Token" "MTK" "https://storacha.network/ipfs/<UPDATED_METADATA_CID>"
+```
+if you upload a new image or **JSON** in the future.
 
+## 💧 6️⃣ What Is a Liquidity Pool?
+A liquidity pool is a smart contract that holds two tokens — for example, your token + SOL.
 
+When traders buy or sell one token for the other, the pool automatically updates prices based on supply and demand.
 
+Visualize it like a bucket with two sides:
 
+One side holds your token
 
+The other holds SOL
+
+If someone buys your token, that side empties slightly and the price rises.
+
+This system is known as an Automated Market Maker (AMM).
+
+Instead of matching buyers and sellers like a traditional order book, an AMM uses simple math (x × y = k) to keep the pool balanced and determine prices automatically.
+
+## ⚖️ 7️⃣ Choosing a Pairing Token
+You can pair with SOL or USDC, but here’s the difference:
+|Pair|Pros|Notes|
+|---|---|---|
+|SOL|Most common ✅|Best visibility, simple setup, higher volume|
+|USDC|Stable reference price	|Slightly more setup, fewer pools|
+💡 For this tutorial, we’ll use SOL — it’s simpler, more liquid, and widely supported.
 
 
 
