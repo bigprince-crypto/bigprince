@@ -170,6 +170,53 @@ You can pair with SOL or USDC, but here’s the difference:
 
 💡 For this tutorial, we’ll use SOL — it’s simpler, more liquid, and widely supported.
 
+## 🧭 8️⃣ Add Liquidity on Raydium
+
+1.Visit https://raydium.io/liquidity
+
+2.Connect your Phantom wallet (Mainnet)
+
+3.Click Add Liquidity
+
+4.In the first field, paste your token mint address
+
+5.In the second field, choose SOL
+
+6.Enter amounts — for example:
+
+0.02 SOL
+
+200 of your token
+
+7.Click Add Liquidity → Approve both transactions in Phantom
+
+Once confirmed, Raydium will create your new LP token representing your share of the pool.
+
+## 📊 9️⃣ Verify Your Pool
+After a minute or two, check:
+
+**✅ On Dexscreene**
+Go to:
+```bash
+https://dexscreener.com/solana/<YOUR_TOKEN_MINT>
+```
+You should see a live chart showing your token paired with SOL.
+
+## ✅ On Jupiter
+Visit:
+```bash
+https://jup.ag/swap/<YOUR_TOKEN_MINT>-So11111111111111111111111111111111111111112
+```
+Your token is now tradable on the Solana DEX network!
+
+##  🧠 Author:BlockExplorer
+## 📅 Updated: October 2025
+## 📘 Version: Raydium Liquidity Pool Tutorial Edition
+
+
+
+
+
 
 
 
