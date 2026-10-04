@@ -92,6 +92,17 @@ Or use Solflare, which often displays metadata faster.
 ## 🧾 5️⃣ Add Metadata (via Storacha)
 You’ll now attach your metadata and image to your token using Storacha for decentralized IPFS hosting.
 
+## ⚙️ Step 1 — Upload Your Image
+1.Visit https://storacha.network.
+
+2.Upload your token image (for example token.png).
+
+3.Copy the direct image URL, which will look like this:
+```bash
+https://storacha.network/ipfs/<IMAGE_CID>
+```
+## ⚙️ Step 2 — Create metadata.json
+Create or edit your `metadata.json` file to include the new image URL:
 
 
 
