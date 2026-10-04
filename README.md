@@ -103,6 +103,30 @@ https://storacha.network/ipfs/<IMAGE_CID>
 ```
 ## ⚙️ Step 2 — Create metadata.json
 Create or edit your `metadata.json` file to include the new image URL:
+```bash
+{
+  "name": "MyToken Token",
+  "symbol": "MTK",
+  "description": "Example token created on Solana.",
+  "image": "https://storacha.network/ipfs/<IMAGE_CID>",
+  "attributes": [
+    { "trait_type": "Type", "value": "Utility" }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://storacha.network/ipfs/<IMAGE_CID>",
+        "type": "image/png"
+      }
+    ]
+  }
+}
+```
+Save this as `metadata.json`.
+
+## ⚙️ Step 3 — Upload the JSON File
+Upload your `metadata.json` file to **Storacha** and copy the resulting URL:
+
 
 
 
